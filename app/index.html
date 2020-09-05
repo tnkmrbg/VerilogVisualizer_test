@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sprotty/sprotty.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/diagram.css">
+</head>
+
+<body>
+
+    <div id="simple_counter" style="display: none;">
+    </div>
+    <aside id="sidebar" class="position-absolute h-100" style="z-index: 1">
+        <button id="sidebar-toggle-button" class="btn position-absolute bg-white" aria-hidden style="left: 100%">
+            <i class="fas fa-bars fa-lg"></i>
+        </button>
+        <main>
+            <!-- <div id="container"> -->
+            <div>
+                <select id="exampleSelector">
+                    <!-- <option value="simple_counter">simple_counter</option>
+                    <option value="submodule">submodule</option>
+                    <option value="submodule2">submodule2</option>
+                    <option value="assign">assign</option> -->
+                </select>
+                <div id="editor"></div>
+                <input type="button" value="diagram" id="diagram">
+                <input type="button" value="go up" id="goup">
+                <input type="button" value="clear all" id="clearall">
+                <input type="button" value="show elk" id="showelk">
+                <div id="editor2"></div>
+                <!-- <p id="editor2"></p> -->
+                <!-- <br> -->
+            </div>
+            <input type="text" id="package-input" class="form-control mb-4" placeholder="Add node">
+            <input type="text" id="yscommand" class="form-control mb-4" placeholder="Find Node"
+                data-content="Add all packages maintained by a specific maintainer to the graph">
+            <input type="text" id="node-port-input" class="form-control mb-4" placeholder="Add node/port"
+                data-content="Show only nodes that contain the text given here, and nodes that have these as dependencies.">
+            <input type="text" id="wire-input" class="form-control mb-4" placeholder="Add source/target"
+                data-content="hogehogehoge.">
+
+            <span style="color:aliceblue">
+                Sub1:s2/Sub1:s2_b>Sub1:s1/Sub1:s1_b
+            </span>
+            <br>
+            <div id="loading" class="mx-2 flex-shrink-0"></div>
+        </main>
+    </aside>
+    <div id="sprotty" class="content-widget position-absolute"></div>
+    <script src="js/yosys-0.5+312-emcc-1.34.1/yosysjs.js"></script>
+<script src="bundle.js"></script></body>
+
+</html>
