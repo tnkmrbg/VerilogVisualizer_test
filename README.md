@@ -6,13 +6,13 @@ ELK based Verilog Visualizer.
 ```bash
 git clone [this repo] 
 node server.js
-Access to http://localhost:8080
 ```
+Access to http://localhost:8080
 
 ### Features
 * No need additional tools except nodejs
 * Automatic layout
-* Instaced components are expandable on doubel-click
+* Instanced components are expandable on doubel-click
 
 ### Using 
 
