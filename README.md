@@ -3,9 +3,11 @@ This is prototype project.
 ELK based Verilog Visualizer.
 
 ### Usage
+```bash
 git clone [this repo] 
 node server.js
 Access to http://localhost:8080
+```
 
 ### Features
 * No need additional tools except nodejs
